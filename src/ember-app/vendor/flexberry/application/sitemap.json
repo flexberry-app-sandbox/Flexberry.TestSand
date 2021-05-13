@@ -1,0 +1,43 @@
+﻿{
+  "applicationCaption": "Books",
+  "applicationTitle": "Books",
+  "items": [
+    {
+      "link": null,
+      "menuName": "books",
+      "caption": "Books",
+      "title": "Books",
+      "children": [
+        {
+          "link": "new-platform-test-sand-country-l",
+          "menuName": null,
+          "caption": "Country",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "new-platform-test-sand-book-l",
+          "menuName": null,
+          "caption": "Book",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "new-platform-test-sand-author-l",
+          "menuName": null,
+          "caption": "Author",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "new-platform-test-sand-language-l",
+          "menuName": null,
+          "caption": "Language",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

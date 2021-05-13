@@ -1,0 +1,273 @@
+<h3 class="ui header">{{t "forms.new-platform-test-sand-book-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.name
+      class=(if (v-get validationObject "name" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.name-caption")
+      data-test-new-platform-test-sand-book-e-name=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "name" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.capacity
+      class=(if (v-get validationObject "capacity" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.capacity-caption")
+      data-test-new-platform-test-sand-book-e-capacity=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "capacity" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.annotation
+      class=(if (v-get validationObject "annotation" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.annotation-caption")
+      data-test-new-platform-test-sand-book-e-annotation=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "annotation" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.agenda
+      class=(if (v-get validationObject "agenda" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.agenda-caption")
+      data-test-new-platform-test-sand-book-e-agenda=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "agenda" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.picturesAuthor
+      class=(if (v-get validationObject "picturesAuthor" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.picturesAuthor-caption")
+      data-test-new-platform-test-sand-book-e-picturesAuthor=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "picturesAuthor" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.reaction
+      class=(if (v-get validationObject "reaction" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.reaction-caption")
+      data-test-new-platform-test-sand-book-e-reaction=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "reaction" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.copyright
+      class=(if (v-get validationObject "copyright" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.copyright-caption")
+      data-test-new-platform-test-sand-book-e-copyright=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "copyright" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.libraryCode
+      class=(if (v-get validationObject "libraryCode" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.libraryCode-caption")
+      data-test-new-platform-test-sand-book-e-libraryCode=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "libraryCode" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.tags
+      class=(if (v-get validationObject "tags" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.tags-caption")
+      data-test-new-platform-test-sand-book-e-tags=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "tags" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.topic
+      class=(if (v-get validationObject "topic" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.topic-caption")
+      data-test-new-platform-test-sand-book-e-topic=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "topic" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.theme
+      class=(if (v-get validationObject "theme" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.theme-caption")
+      data-test-new-platform-test-sand-book-e-theme=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "theme" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.corrector
+      class=(if (v-get validationObject "corrector" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.corrector-caption")
+      data-test-new-platform-test-sand-book-e-corrector=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "corrector" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.format
+      class=(if (v-get validationObject "format" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.format-caption")
+      data-test-new-platform-test-sand-book-e-format=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "format" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.font
+      class=(if (v-get validationObject "font" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.font-caption")
+      data-test-new-platform-test-sand-book-e-font=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "font" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.new-platform-test-sand-book-e.publishDate-caption"}}</label>
+    {{
+      flexberry-simpledatetime
+      type="date"
+      placeholder=(t 'components.flexberry-datepicker.placeholder')
+      readonly=readonly
+      value=model.publishDate
+      class=(if (v-get validationObject "publishDate" "isInvalid") "error")
+      data-test-new-platform-test-sand-book-e-publishDate=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "publishDate" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.new-platform-test-sand-book-e.bestseller-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.bestseller
+      class=(if (v-get validationObject "bestseller" "isInvalid") "error")
+      data-test-new-platform-test-sand-book-e-bestseller=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "bestseller" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.new-platform-test-sand-book-e.language-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.language
+      relationName="language"
+      projection="LanguageL"
+      title=(t "forms.new-platform-test-sand-book-e.language-caption")
+      readonly=readonly
+      componentName="languageLookup"
+      class=(if (v-get validationObject "language" "isInvalid") "error")
+      data-test-new-platform-test-sand-book-e-language=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "language" "message")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.language.name
+      class=(if (v-get validationObject.language "name" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.language.name-caption")
+      data-test-new-platform-test-sand-book-e-language-name=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject.language "name" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.new-platform-test-sand-book-e.author-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.author
+      relationName="author"
+      projection="AuthorL"
+      title=(t "forms.new-platform-test-sand-book-e.author-caption")
+      readonly=readonly
+      componentName="authorLookup"
+      class=(if (v-get validationObject "author" "isInvalid") "error")
+      data-test-new-platform-test-sand-book-e-author=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "author" "message")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.author.name
+      class=(if (v-get validationObject.author "name" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.author.name-caption")
+      data-test-new-platform-test-sand-book-e-author-name=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject.author "name" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.new-platform-test-sand-book-e.country-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.country
+      relationName="country"
+      projection="CountryL"
+      title=(t "forms.new-platform-test-sand-book-e.country-caption")
+      readonly=readonly
+      componentName="countryLookup"
+      class=(if (v-get validationObject "country" "isInvalid") "error")
+      data-test-new-platform-test-sand-book-e-country=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "country" "message")}}
+  </div>
+
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.country.name
+      class=(if (v-get validationObject.country "name" "isInvalid") "error")
+      label=(t "forms.new-platform-test-sand-book-e.country.name-caption")
+      data-test-new-platform-test-sand-book-e-country-name=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject.country "name" "message")}}
+  </div>
+</form>

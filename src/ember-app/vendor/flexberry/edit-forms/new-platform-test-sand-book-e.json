@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Language",
+      "projection": "LanguageL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Author",
+      "projection": "AuthorL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Country",
+      "projection": "CountryL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Book",
+  "name": "NewPlatformTestSandBookE",
+  "className": "BookE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-test-sand-book",
+      "modelProjection": "BookE"
+    }
+  ]
+}

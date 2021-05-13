@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "new-platform-test-sand-country-e",
+  "editForm": "new-platform-test-sand-country-e",
+  "external": false,
+  "caption": "Country",
+  "name": "NewPlatformTestSandCountryL",
+  "className": "CountryL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-test-sand-country",
+      "modelProjection": "CountryL"
+    }
+  ]
+}

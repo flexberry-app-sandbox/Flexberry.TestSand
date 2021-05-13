@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "new-platform-test-sand-language-e",
+  "editForm": "new-platform-test-sand-language-e",
+  "external": false,
+  "caption": "Language",
+  "name": "NewPlatformTestSandLanguageL",
+  "className": "LanguageL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "new-platform-test-sand-language",
+      "modelProjection": "LanguageL"
+    }
+  ]
+}

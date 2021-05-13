@@ -1,0 +1,519 @@
+﻿{
+  "name": "NewPlatformTestSandBook",
+  "modelName": "new-platform-test-sand-book",
+  "className": "Book",
+  "nameSpace": "NewPlatform.TestSand",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "capacity",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "annotation",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "agenda",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "picturesAuthor",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "reaction",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "copyright",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "libraryCode",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "tags",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "theme",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "topic",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "corrector",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "format",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "font",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "publishDate",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "bestseller",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "author",
+      "relatedTo": "new-platform-test-sand-author",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "language",
+      "relatedTo": "new-platform-test-sand-language",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": false,
+      "name": "country",
+      "relatedTo": "new-platform-test-sand-country",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "BookE",
+      "modelName": "new-platform-test-sand-book",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "capacity",
+          "caption": "Capacity",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "annotation",
+          "caption": "Annotation",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "agenda",
+          "caption": "Agenda",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "picturesAuthor",
+          "caption": "Pictures author",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "reaction",
+          "caption": "Reaction",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "copyright",
+          "caption": "Copyright",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "libraryCode",
+          "caption": "Library code",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "tags",
+          "caption": "Tags",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "topic",
+          "caption": "Topic",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "theme",
+          "caption": "Theme",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "corrector",
+          "caption": "Corrector",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "format",
+          "caption": "Format",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "font",
+          "caption": "Font",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "publishDate",
+          "caption": "Publish date",
+          "hidden": false,
+          "index": 14
+        },
+        {
+          "name": "bestseller",
+          "caption": "Bestseller",
+          "hidden": false,
+          "index": 15
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Language",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 17
+            }
+          ],
+          "index": 16,
+          "type": "default",
+          "caption": "Language",
+          "name": "language",
+          "relatedTo": "new-platform-test-sand-language",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Author",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 19
+            }
+          ],
+          "index": 18,
+          "type": "default",
+          "caption": "Author",
+          "name": "author",
+          "relatedTo": "new-platform-test-sand-author",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Country",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 21
+            }
+          ],
+          "index": 20,
+          "type": "default",
+          "caption": "Country",
+          "name": "country",
+          "relatedTo": "new-platform-test-sand-country",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "BookL",
+      "modelName": "new-platform-test-sand-book",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "capacity",
+          "caption": "Capacity",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "annotation",
+          "caption": "Annotation",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "agenda",
+          "caption": "Agenda",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "picturesAuthor",
+          "caption": "Pictures author",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "reaction",
+          "caption": "Reaction",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "copyright",
+          "caption": "Copyright",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "libraryCode",
+          "caption": "Library code",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "tags",
+          "caption": "Tags",
+          "hidden": false,
+          "index": 8
+        },
+        {
+          "name": "topic",
+          "caption": "Topic",
+          "hidden": false,
+          "index": 9
+        },
+        {
+          "name": "theme",
+          "caption": "Theme",
+          "hidden": false,
+          "index": 10
+        },
+        {
+          "name": "corrector",
+          "caption": "Corrector",
+          "hidden": false,
+          "index": 11
+        },
+        {
+          "name": "format",
+          "caption": "Format",
+          "hidden": false,
+          "index": 12
+        },
+        {
+          "name": "font",
+          "caption": "Font",
+          "hidden": false,
+          "index": 13
+        },
+        {
+          "name": "publishDate",
+          "caption": "Publish date",
+          "hidden": false,
+          "index": 14
+        },
+        {
+          "name": "bestseller",
+          "caption": "Bestseller",
+          "hidden": false,
+          "index": 15
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Language",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 16
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Name",
+          "name": "language",
+          "relatedTo": "new-platform-test-sand-language",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Author",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 17
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Name",
+          "name": "author",
+          "relatedTo": "new-platform-test-sand-author",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Country",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": false,
+              "index": 18
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Name",
+          "name": "country",
+          "relatedTo": "new-platform-test-sand-country",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
